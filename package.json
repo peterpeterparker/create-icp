@@ -1,0 +1,43 @@
+{
+  "name": "create-icp",
+  "version": "0.0.1",
+  "description": "A simple command line tool for initializing projects with Juno or guiding developers to the Internet Computer documentation",
+  "type": "module",
+  "bin": "dist/index.js",
+  "main": "dist/index.js",
+  "files": [
+    "dist/index.js",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "format": "prettier . --write",
+    "build": "node rmdir.mjs && node esbuild.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peterpeterparker/create-icp.git"
+  },
+  "author": "David Dal Busco",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/peterpeterparker/create-icp/issues"
+  },
+  "homepage": "https://github.com/peterpeterparker/create-icp#readme",
+  "dependencies": {
+    "create-ic": "^0.6.2"
+  },
+  "devDependencies": {
+    "esbuild": "^0.20.2",
+    "prettier": "^3.2.5",
+    "prettier-plugin-organize-imports": "^3.2.4",
+    "typescript": "^5.4.5"
+  },
+  "keywords": [
+    "zero-configuration",
+    "buildtools",
+    "cli",
+    "internet-computer",
+    "internetcomputer"
+  ]
+}
