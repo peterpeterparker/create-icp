@@ -8,6 +8,7 @@ import {
     SidebarTrigger,
 } from "@/components/ui/sidebar"
 import {ThemeToggle} from "@/components/core/theme-toggle.tsx";
+import {WalletProvider} from "@/components/providers/wallet-provider.tsx";
 
 export const Route = createFileRoute('/')({
   component: App,
@@ -41,7 +42,9 @@ function App() {
             <div className="flex flex-1 flex-col">
                 <div className="flex h-full w-full items-center justify-center p-6 md:p-10">
                     <div className="w-full max-w-sm">
-                        <LoginForm />
+                        <WalletProvider>
+                            <LoginForm />
+                        </WalletProvider>
                     </div>
                 </div>
             </div>
